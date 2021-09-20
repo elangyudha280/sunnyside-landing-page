@@ -332,6 +332,76 @@ p.p-graphic {
 }
 /* end code bagian content graphic design and photography */
 
+/* code card-testimonial */
+
+.judul-testi {
+  margin-top: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(210, 4%, 67%);
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.card-template {
+  margin: 1.5em auto 0;
+  max-width: 1100px;
+  border: 1px solid red;
+  display: grid;
+  position: relative;
+  padding: 0.2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-template .card {
+  width: 100%;
+  padding: 1.5em 0;
+  border: 1px solid cyan;
+}
+.card .img-header {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .img-card {
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+}
+.card .card-desc {
+  padding: 0.8em 0;
+  text-align: center;
+}
+.card-desc p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  color: hsl(213, 9%, 39%);
+}
+.card .card-footer {
+  width: 100%;
+  padding: 0.8em;
+  text-align: center;
+}
+.card-footer .name-testi {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+.card-footer p.profession {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.7em;
+  margin-top: 0.5em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: hsl(232, 10%, 55%);
+}
+
+/* end code card testimonial */
+
 /* media < 1100 */
 @media screen and (max-width: 1100px) and (min-width: 1000px) {
   .brand h2 {
