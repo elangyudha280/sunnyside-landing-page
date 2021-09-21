@@ -317,6 +317,7 @@ p.p-graphic {
 .p-photo {
   font-weight: 600;
   text-transform: none;
+  font-family: 'Barlow', sans-serif;
 }
 
 .work-template .desc-photo {
@@ -346,7 +347,6 @@ p.p-graphic {
 .card-template {
   margin: 1.5em auto 0;
   max-width: 1100px;
-  border: 1px solid red;
   display: grid;
   position: relative;
   padding: 0.2em;
@@ -355,7 +355,6 @@ p.p-graphic {
 .card-template .card {
   width: 100%;
   padding: 1.5em 0;
-  border: 1px solid cyan;
 }
 .card .img-header {
   position: relative;
@@ -401,6 +400,28 @@ p.p-graphic {
 }
 
 /* end code card testimonial */
+
+/* code bagian container-img sebelum footer */
+
+.container-img {
+  position: relative;
+  width: 100%;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-img .img-item {
+  width: 100%;
+  height: 400px;
+}
+.container-img .img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end code bagian container-img sebelum footer */
 
 /* media < 1100 */
 @media screen and (max-width: 1100px) and (min-width: 1000px) {
@@ -510,6 +531,25 @@ p.p-graphic {
     order: 2;
   }
   /*end code content media < 1000px */
+
+  /* code card testi <1000 */
+
+  .card-template {
+    grid-template-columns: 1fr;
+    align-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  /* end code card testi < 1000 */
+
+  .container-img {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .container-img .img-item {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 /* akhir code ukuran < 1000px */
@@ -528,6 +568,10 @@ p.p-graphic {
   .brand p {
     font-size: 0.9em;
   }
+  .container-img .img-item {
+    width: 100%;
+    height: 220px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -542,7 +586,7 @@ p.p-graphic {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   .jumbotron .display-4 {
     font-size: 1.1em;
   }
@@ -553,7 +597,11 @@ p.p-graphic {
     font-size: 1.3em;
   }
   .brand p {
-    font-size: 0.6em;
+    font-size: 0.7em;
+  }
+  .desc-graphic .g-desc p.p-graphic,
+  .p-photo {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 384px) {
@@ -568,11 +616,19 @@ p.p-graphic {
   }
 }
 @media screen and (max-width: 300px) {
-  .brand h2.h-audien {
+  .brand h2 {
     font-size: 1em;
   }
   .brand p {
     font-size: 0.5em;
+  }
+  .g-desc .h-graphic,
+  .h-photo {
+    text-transform: capitalize;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
   }
 }
 @media screen and (max-width: 280px) {
@@ -598,6 +654,10 @@ p.p-graphic {
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     -ms-transition: 0.3s;
+  }
+  .container-img {
+    max-width: 1500px;
+    margin: 1.5em auto;
   }
 }
 
